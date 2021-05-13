@@ -568,3 +568,37 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.python.pydev.shared_core 4 4 2021-05-13 17:12:54.295
 !MESSAGE Info: Rebuilding internal caches: C:\Users\ITAUser\Desktop\Python\.metadata\.plugins\org.eclipse.core.resources\.projects\Input\com.python.pydev.analysis\AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+
+!ENTRY org.python.pydev.shared_core 4 4 2021-05-13 17:48:45.744
+!MESSAGE Info: Rebuilding internal caches: C:\Users\ITAUser\Desktop\Python\.metadata\.plugins\org.eclipse.core.resources\.projects\Survey\com.python.pydev.analysis\AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+
+!ENTRY org.python.pydev.shared_core 4 4 2021-05-13 17:50:16.811
+!MESSAGE Resource '/Survey/Survey.py' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/Survey/Survey.py)[368]: java.lang.Exception: Resource '/Survey/Survey.py' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:330)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:204)
+	at org.eclipse.core.internal.resources.Resource.deleteMarkers(Resource.java:796)
+	at com.python.pydev.analysis.external.AbstractExternalCodeAnalysisOnlyRemoveMarkersVisitor.deleteMarkers(AbstractExternalCodeAnalysisOnlyRemoveMarkersVisitor.java:38)
+	at com.python.pydev.analysis.external.AbstractExternalCodeAnalysisOnlyRemoveMarkersVisitor.startVisit(AbstractExternalCodeAnalysisOnlyRemoveMarkersVisitor.java:20)
+	at com.python.pydev.analysis.additionalinfo.builders.AnalysisBuilderRunnable.doAnalysis(AnalysisBuilderRunnable.java:288)
+	at com.python.pydev.analysis.additionalinfo.builders.AbstractAnalysisBuilderRunnable.run(AbstractAnalysisBuilderRunnable.java:164)
+	at org.python.pydev.core.concurrency.RunnableAsJobsPoolThread$1.run(RunnableAsJobsPoolThread.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2021-05-13 17:50:16.812
+!MESSAGE Resource '/Survey/Survey.py' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/Survey/Survey.py' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:330)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:204)
+	at org.eclipse.core.internal.resources.Resource.deleteMarkers(Resource.java:796)
+	at com.python.pydev.analysis.external.AbstractExternalCodeAnalysisOnlyRemoveMarkersVisitor.deleteMarkers(AbstractExternalCodeAnalysisOnlyRemoveMarkersVisitor.java:38)
+	at com.python.pydev.analysis.external.AbstractExternalCodeAnalysisOnlyRemoveMarkersVisitor.startVisit(AbstractExternalCodeAnalysisOnlyRemoveMarkersVisitor.java:20)
+	at com.python.pydev.analysis.additionalinfo.builders.AnalysisBuilderRunnable.doAnalysis(AnalysisBuilderRunnable.java:288)
+	at com.python.pydev.analysis.additionalinfo.builders.AbstractAnalysisBuilderRunnable.run(AbstractAnalysisBuilderRunnable.java:164)
+	at org.python.pydev.core.concurrency.RunnableAsJobsPoolThread$1.run(RunnableAsJobsPoolThread.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
